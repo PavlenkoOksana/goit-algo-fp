@@ -27,7 +27,7 @@ def print_probabilities(probabilities):
 
 def print_table_of_errors(probabilities, table_of_probabilities):
     print("\nПохибка методу Монте-Карло:\n")
-    print("сума\tймовірність")
+    print("сума\tпохибка")
     for i in range(2, 13):
         table_value = table_of_probabilities.get(i)
         prob_value = probabilities.get(i, 0)
@@ -59,9 +59,9 @@ def main():
       7: 16.67,
       8: 13.89,
       9: 11.11,
-      10:	8.33,
-      11:	5.56,
-      12:	2.78        
+      10: 8.33,
+      11: 5.56,
+      12: 2.78        
     }
     
     num_rolls = 100000 
